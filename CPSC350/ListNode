@@ -1,0 +1,23 @@
+class ListNode{
+    public:
+        int data
+        ListNode();
+        ListNode(int d);
+        ~ListNode();
+
+};
+
+///seperate files;
+ListNode::ListNode(){}
+
+ListNode::ListNode(int d)
+{
+    data = d;
+    next = NULL;
+}
+
+ListNode::~ListNode()
+{
+    if (next == NULL)
+        delete next;
+}
